@@ -1,0 +1,121 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+nav{
+    padding: 1em;
+    margin: 0 275px;
+    display: flex;
+}
+nav h5{
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+nav a{
+    margin-left: auto;
+    text-decoration: none;
+    color:#1e1e1e;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+nav a:hover{
+    color: dodgerblue;
+    transform: scale(1.2);
+}
+
+main {
+    background-color: #fcf6e6;
+    height: 100vh;
+    width: 100vw;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 55%;
+    height: auto;
+    display: flex;
+    z-index: 99;
+    border-radius: 20px;
+}
+
+.left-side{
+    flex-grow: 4;
+    background: linear-gradient(221deg, #FFF1F1 0%, #FFF 100%);
+    border-radius: 20px 0 0 20px;
+}
+
+.logo-container{
+    padding: 60px;
+}
+
+h1{
+    text-transform: uppercase;
+    color:  #CE9898;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px; /* 100% */
+    letter-spacing: 17px;
+    padding-left: 75px;
+    padding-bottom: 34px;
+}
+h1 span{
+    color: #423A3A;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 71px; /* 110.938% */
+}
+.text-container p{
+    color: #CE9898;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    padding: 0 75px;
+}
+
+form{
+    padding: 20px 75px 0 75px;
+    display: flex;
+}
+
+input{
+    min-height: 56px;
+    min-width: 100%;
+    border-radius: 28px;
+    border: 1px solid  #EE8B8B;
+    padding-left: 32px;
+    color:  #EE8B8B;
+}
+
+
+.right-side{
+    background-image: url("../img/lady.png");
+    background-size: cover;
+    height: 100%;
+    max-height: 800px;
+    aspect-ratio: 610/800;
+    width: 100%;
+    border-radius: 0 20px 20px 0 ;
+}
+
+button{
+    background:  linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    width: 100px;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    margin-left: -100px;
+    box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+}

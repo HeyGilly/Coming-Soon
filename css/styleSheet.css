@@ -1,0 +1,134 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    --text-color: #423A3A;
+    --secondary: #CE9898;
+    --outline: #EE8B8B;
+    --white: #FFF;
+    --main-background: linear-gradient(221deg, #FFF1F1 0%, #FFF 100%);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav{
+    padding: 1em;
+    margin: 0 275px;
+    display: flex;
+}
+nav h5{
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+nav a{
+    margin-left: auto;
+    text-decoration: none;
+    color:#1e1e1e;
+    transition: all 1s;
+    cursor: pointer;
+
+}
+nav a:hover{
+    color: dodgerblue;
+    transform: scale(1.2);
+}
+
+
+.page-wrapper{
+    display: flex;
+    min-height: 100vh;
+    background-color: #fffad9;
+}
+
+.left-content-side{
+    flex: 2 0 0;
+    background: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 75px;
+}
+
+.left-inner{
+    max-width: 445px;
+    width: 100%;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.text-container h1{
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px; /* 100% */
+    letter-spacing: 17px;
+}
+span{
+    color: var(--text-color);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 71px; /* 110.938% */
+}
+
+.text-container p{
+    color: #CE9898;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+
+.right-image-container{
+    /*flex: 1.3 0 0;*/
+    height: 100vh;
+    aspect-ratio: 610/800;
+    background-image: url("../img/lady.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 136px;
+}
+
+button{
+    background: var(--background);
+    width: 100px;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+    margin-left: -100px;
+    box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+}
+label{
+    display: block;
+    width: 100%;
+}
+form.newsletter{
+    display: flex;
+    padding-top: 40px;
+}
+input{
+    min-height: 56px;
+    min-width: 100%;
+    border-radius: 28px;
+    border: 1px solid var(--secondary);
+    padding-left: 32px;
+    color: var(--secondary);
+}
+
